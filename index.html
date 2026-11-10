@@ -41,6 +41,62 @@ nav button.on{color:var(--pr);font-weight:700;border-top:3px solid var(--gold);m
 .cred code{font-size:18px;direction:ltr;display:inline-block;background:rgba(0,0,0,.07);padding:2px 8px;border-radius:6px}
 .bn{border-inline-start:5px solid var(--gold)}.bn.live{background:rgba(27,127,75,.18)}#ov{position:fixed;inset:0;z-index:30;background:linear-gradient(#003478,#0b6b3a)}#ov canvas{display:block;width:100%;height:100%;touch-action:none}#ov #sk{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));inset-inline-start:12px;background:rgba(255,255,255,.22);color:#fff}#ov .ctl{position:absolute;inset:auto 0 0 0;text-align:center;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px))}#toast{position:fixed;inset:auto 0 76px;margin:auto;width:max-content;max-width:90%;background:#222;color:#fff;padding:8px 16px;border-radius:20px;display:none;z-index:9}
 nav{background:#003478!important;border-top:3px solid var(--gold)!important}nav button{color:#fff!important;font-weight:700}nav button.on{background:rgba(255,255,255,.18);border-top:3px solid #fff!important;margin-top:-3px}
+
+/* ===== theme v2 ===== */
+:root{--sh:0 6px 22px rgba(0,52,120,.09)}
+body{background:radial-gradient(1200px 500px at 50% -150px,rgba(10,92,199,.14),transparent),var(--bg);min-height:100vh}
+#app{max-width:760px;padding:0 14px 110px}
+header{background:linear-gradient(135deg,#00265a,#0a4aa6);margin:0 -14px 16px;padding:12px 16px;border-bottom:0;border-radius:0 0 24px 24px;box-shadow:0 8px 24px rgba(0,38,90,.28);position:relative}
+header::after{content:"";position:absolute;inset-inline:0;bottom:-3px;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+header img.l{height:50px;width:50px;object-fit:contain;background:#fff;border-radius:14px;padding:5px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+header b{font-size:17px}
+header .btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.5);border-radius:20px}
+.av{border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.card{border:0;border-radius:20px;box-shadow:var(--sh);padding:16px}
+.card h3{font-size:15px;display:flex;align-items:center;gap:8px}
+.card h3::before{content:"";width:5px;height:18px;background:linear-gradient(var(--gold),#e6c87f);border-radius:4px;flex:none}
+.cur{background:linear-gradient(135deg,#00306e,#0b5bc4);color:#fff;border:0;position:relative;overflow:hidden}
+.cur::after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.07);top:-60px;inset-inline-start:-50px}
+.cur h3{color:#f2d58b}.cur .lec b{font-size:22px}.cur .lec span{color:rgba(255,255,255,.88)}.cur .lec .tm{color:#f2d58b;font-size:16px}
+.cur p.mu{color:rgba(255,255,255,.8)}
+.lec .tm{display:inline-block;background:rgba(201,165,92,.2);border-radius:20px;padding:3px 12px;width:max-content}
+.cur .lec .tm{background:rgba(255,255,255,.14)}
+.row{border-top:1px dashed var(--bd);padding:11px 6px}
+.row .tm{background:rgba(0,52,120,.09);color:var(--pr);border-radius:10px;padding:6px 8px;text-align:center;min-width:76px}
+.row.on{background:linear-gradient(90deg,rgba(201,165,92,.28),transparent);border-radius:12px}
+.row.cx b{text-decoration:line-through;opacity:.65}
+.k.kx{background:#c0392b;color:#fff}
+.hi{display:flex;justify-content:space-between;align-items:baseline;margin:2px 4px 12px;gap:8px;flex-wrap:wrap}.hi b{font-size:19px}.hi small{color:var(--mu)}
+.ntf{display:grid;gap:8px;border:1px dashed var(--gold)!important}.ntf small{display:block}
+.btn{border-radius:14px;box-shadow:0 4px 12px rgba(0,52,120,.22);transition:transform .12s}.btn:active{transform:scale(.97)}
+.btn.g{box-shadow:none}.btn.s{border-radius:12px}
+input,select{border-radius:12px;border:1.5px solid var(--bd);background:var(--card)}input:focus,select:focus{outline:0;border-color:var(--pr);box-shadow:0 0 0 3px rgba(10,92,199,.15)}
+nav{inset:auto 12px calc(10px + env(safe-area-inset-bottom,0px)) 12px;border-radius:22px;border:0!important;box-shadow:0 10px 30px rgba(0,26,64,.45);padding-bottom:0!important;overflow:hidden}
+nav button{padding:14px 4px}nav button.on{border-top:0!important;margin-top:0!important;background:rgba(255,255,255,.16)!important;box-shadow:inset 0 -3px 0 var(--gold)}
+.lg{margin:0 -14px;padding:calc(36px + env(safe-area-inset-top,0px)) 20px 34px;background:linear-gradient(165deg,#00265a,#0a5cc7);border-radius:0 0 36px 36px;color:#fff;position:relative;overflow:hidden}
+.lg::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(201,165,92,.16);top:-90px;inset-inline-end:-80px}
+.lg .logo{height:132px;width:132px;object-fit:contain;background:#fff;border-radius:50%;padding:16px;box-shadow:0 12px 34px rgba(0,0,0,.35);position:relative}
+.lg h1{color:#fff;font-size:26px;margin:14px 0 4px;position:relative}.lg .mu{color:rgba(255,255,255,.85);position:relative;margin:0 0 6px}
+.lg .card{color:var(--tx);margin:22px 0 0;position:relative;box-shadow:0 14px 36px rgba(0,0,0,.28)}
+.adm{display:grid;gap:14px}.adm .card{margin:0}
+@media(min-width:820px){#app{max-width:1000px}.adm{grid-template-columns:1fr 1fr;align-items:start}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sh:0 6px 22px rgba(0,0,0,.4)}.row .tm{background:rgba(106,165,255,.14)}}
+
+header{background:linear-gradient(135deg,#001f4d,#003478 60%,#0a4fa8)!important;box-shadow:0 4px 16px rgba(0,20,60,.3);border-bottom:3px solid var(--gold)}
+header img.l{height:46px!important;background:#fff;border-radius:12px;padding:5px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+header b{font-size:16px}
+.card{border-radius:16px;box-shadow:0 2px 12px rgba(10,40,100,.08)}
+.card h3{display:flex;align-items:center;gap:8px}.card h3::before{content:"";width:4px;height:18px;border-radius:2px;background:var(--gold);flex:none}
+.cur{background:linear-gradient(135deg,#003478,#0a5cc7)!important;color:#fff;border:0!important}
+.cur h3,.cur .lec b{color:#fff}.cur h3::before{background:#ffd77a}.cur .lec span{color:#dbe8ff}.cur .lec .tm{color:#ffd77a;font-size:15px}
+body.login{background:linear-gradient(160deg,#001a42,#003478 55%,#0a5cc7)}
+body.login .lg h1{color:#fff}body.login .lg>p{color:#cfe0ff}
+.lg .logo{height:130px!important;background:#fff;border-radius:24px;padding:14px;box-shadow:0 12px 34px rgba(0,0,0,.35)}
+.lg .card{box-shadow:0 14px 40px rgba(0,0,0,.3)}
+nav{background:#003478!important;border-top:3px solid var(--gold)!important;box-shadow:0 -4px 18px rgba(0,0,0,.2)}
+nav button{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;padding:8px 2px!important}
+nav button .ic{font-size:19px;line-height:1}
+.btn{border-radius:12px}
 </style>
 </head>
 <body>
@@ -59,44 +115,58 @@ const L=[[6,"التحليل الحركي","م.د الأمير حيدر",1,"09:00
 [2,"كرة اليد 2","م.د مرتضى حسون",0,"09:00","14:30"],[2,"تحكيم كرة اليد","م.د مرتضى حسون",0,"11:00","16:30"]];
 const mins=t=>{const a=t.split(":");return +a[0]*60+ +a[1]};
 const fmtM=m=>{let h=Math.floor(m/60),n=m%60;const p=h>=12?"م":"ص";h=h%12||12;return h+":"+String(n).padStart(2,"0")+" "+p};
-function dayList(sh,d){const a=L.filter(l=>l[0]==d).map(l=>({n:l[1],t:l[2],r:l[3]?(sh=="m"?"سيبار C323":"اور C310"):"المغلقة",s:l[sh=="m"?4:5]})).sort((p,q)=>mins(p.s)-mins(q.s));
- a.forEach((x,i)=>{x.e=Math.min(mins(x.s)+60,a[i+1]?mins(a[i+1].s):1e4)});return a}
-function status(sh){const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes(),today=dayList(sh,d);
- const cur=today.find(x=>m>=mins(x.s)&&m<x.e);let nxt=today.find(x=>mins(x.s)>m),when="اليوم";
- if(!nxt)for(let i=1;i<=7&&!nxt;i++){const dd=(d+i)%7,a=dayList(sh,dd);if(a.length){nxt=a[0];when=i==1?"غداً":DAYS[dd]}}
+function dayList(sh,d,ds){const a=L.filter(l=>l[0]==d).map(l=>{const s0=l[sh=="m"?4:5],k=d+"|"+l[1]+"|"+s0,x={n:l[1],t:l[2],r:l[3]?(sh=="m"?"سيبار C323":"اور C310"):"المغلقة",s:s0,k};
+  const cs=(S.changes||[]).filter(c=>c.sh==sh&&c.l==k),c=cs.find(c=>ds&&c.d==ds)||cs.find(c=>!c.d);
+  if(c){if(c.c){x.x=1}else if(c.t){x.s=c.t;x.ch=1}if(c.n)x.note=c.n}return x}).sort((p,q)=>mins(p.s)-mins(q.s));
+ a.forEach((x,i)=>{const nx=a.slice(i+1).find(y=>!y.x);x.e=Math.min(mins(x.s)+60,nx?mins(nx.s):1e4)});return a}
+function status(sh){const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes(),today=dayList(sh,d,ymd(now)),live=today.filter(x=>!x.x);
+ const cur=live.find(x=>m>=mins(x.s)&&m<x.e);let nxt=live.find(x=>mins(x.s)>m),when="اليوم";
+ if(!nxt)for(let i=1;i<=7&&!nxt;i++){const dt=new Date(now);dt.setDate(dt.getDate()+i);const dd=dt.getDay(),a=dayList(sh,dd,ymd(dt)).filter(x=>!x.x);if(a.length){nxt=a[0];when=i==1?"غداً":DAYS[dd]}}
  return{cur,nxt,when,today,m}}
-const S={me:null,tab:"home",students:[],notes:[],ready:false,sh:"m",cred:null,sub:SUBJ[0],del:null,busy:0},PH={};
+const S={me:null,tab:"home",students:[],notes:[],changes:[],ready:false,sh:"m",cred:null,sub:SUBJ[0],del:null,busy:0},PH={};
 let db=null,usr=null,assets=null,dls=null;
 async function sha(s){const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
-function toast(t){const e=$("#toast");e.textContent=t;e.style.display="block";clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display="none",2800)}
+function toast(t){const e=$("#toast");e.textContent=t;e.style.display="block";clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display="none",Math.max(2800,t.length*110))}
 const SH=()=>S.me.admin?S.sh:S.me.sh;
 const mk=s=>s.adm?{admin:true,n:s.n,u:s.u,id:s.id}:s;
 const av=s=>s.ph?`<img class="av" src="${esc(s.ph)}" alt="">`:`<span class="av">${esc((s.n||"؟")[0])}</span>`;
-const lec=x=>`<div class="lec"><b>${esc(x.n)}</b><span>${esc(x.t)}</span><span>القاعة: ${esc(x.r)}</span><span class="tm">${fmtM(mins(x.s))} – ${fmtM(x.e)}</span></div>`;
-const row=(x,m)=>`<div class="row${m!=null&&m>=mins(x.s)&&m<x.e?" on":""}"><span class="tm">${fmtM(mins(x.s))}</span><div><b>${esc(x.n)}</b><small>${esc(x.t)} • ${esc(x.r)}</small></div></div>`;
+const bdg=x=>x.x?'<span class="k kx">ملغاة</span>':x.ch?'<span class="k">وقت معدّل</span>':"";
+const lec=x=>`<div class="lec"><b>${esc(x.n)} ${bdg(x)}</b><span>${esc(x.t)}</span><span>القاعة: ${esc(x.r)}</span><span class="tm">${fmtM(mins(x.s))} – ${fmtM(x.e)}</span>${x.note?`<span>📝 ${esc(x.note)}</span>`:""}</div>`;
+const row=(x,m)=>`<div class="row${!x.x&&m!=null&&m>=mins(x.s)&&m<x.e?" on":""}${x.x?" cx":""}"><span class="tm">${fmtM(mins(x.s))}</span><div><b>${esc(x.n)} ${bdg(x)}</b><small>${esc(x.t)} • ${esc(x.r)}${x.note?" • 📝 "+esc(x.note):""}</small></div></div>`;
 const shSw=()=>`<div class="chips"><button class="btn s ${S.sh=="m"?"":"g"}" data-a="sh" data-v="m">الدراسة الصباحية</button><button class="btn s ${S.sh=="e"?"":"g"}" data-a="sh" data-v="e">الدراسة المسائية</button></div>`;
 
+const hi=()=>`<div class="hi"><b>👋 أهلاً ${esc(S.me.admin?"بالمشرف":(S.me.n||"").split(" ")[0])}</b><small>${new Date().toLocaleDateString("ar-IQ",{weekday:"long",day:"numeric",month:"long"})}</small></div>`;
+const ntfOK=()=>"Notification" in window;
+const ntfOn=()=>ntfOK()&&Notification.permission=="granted";
+const ntfCard=()=>S.me.admin||!ntfOK()?"":ntfOn()?'<p class="mu" style="text-align:center;font-size:12px;margin:0 0 10px">🔔 إشعارات بدء المحاضرة مفعّلة</p>':'<section class="card ntf"><b>🔔 فعّل إشعار بدء المحاضرة</b><small class="mu">يصلك تنبيه بأول دقائق المحاضرة (الموقع أو التطبيق لازم يكون مفتوح بالخلفية)</small><button class="btn s" data-a="ntf">تفعيل الإشعارات</button></section>';
+async function showNtf(title,body,tag){try{const r=await navigator.serviceWorker.getRegistration();if(r&&r.showNotification){await r.showNotification(title,{body,icon:"icon-192.png",badge:"icon-192.png",tag,dir:"rtl",lang:"ar",vibrate:[200,100,200]});return}}catch(e){}try{new Notification(title,{body,icon:"icon-192.png",tag,dir:"rtl"})}catch(e){}}
+async function askNtf(){if(!ntfOK())return toast("المتصفح لا يدعم الإشعارات");const p=await Notification.requestPermission();if(p=="granted"){toast("تم تفعيل إشعارات المحاضرات");render();checkNtf()}else toast("لم يتم السماح بالإشعارات")}
+function checkNtf(){if(!S.me||S.me.admin||!ntfOn())return;const st=status(SH());if(!st.cur)return;const now=new Date(),m=now.getHours()*60+now.getMinutes();if(m-mins(st.cur.s)>5)return;
+ const key=ymd(now)+"|"+st.cur.s+"|"+st.cur.n;let last="";try{last=localStorage.getItem("ntfLast")||""}catch(e){}if(last==key)return;try{localStorage.setItem("ntfLast",key)}catch(e){}
+ showNtf("🔔 بدأت المحاضرة الآن",st.cur.n+" – "+st.cur.r+" – "+st.cur.t,key)}
+const lname=c=>{const p=String(c.l).split("|");return DAYS[+p[0]]+" – "+p[1]+" ("+(c.sh=="m"?"صباحي":"مسائي")+")"};
+function chgCard(){const opt=sh=>`<optgroup label="${sh=="m"?"الدراسة الصباحية":"الدراسة المسائية"}">`+ORDER.flatMap(d=>L.filter(l=>l[0]==d).map(l=>{const s0=l[sh=="m"?4:5];return `<option value="${sh}|${d}|${esc(l[1])}|${s0}">${DAYS[d]} – ${esc(l[1])} (${fmtM(mins(s0))})</option>`})).join("")+"</optgroup>";
+ return `<section class="card"><h3>تعديل أوقات المحاضرات</h3><p class="mu" style="margin-top:0;font-size:13px">الأوقات الثابتة تبقى كما هي، والتعديل يُطبَّق فوقها ويمكن إرجاعه بضغطة.</p><label>المحاضرة</label><select id="cl">${opt("m")}${opt("e")}</select><label>الوقت الجديد</label><input id="ct" type="time"><label>لتاريخ محدد فقط (اتركه فارغاً ليكون دائماً)</label><input id="cd" type="date"><label><input id="cc" type="checkbox" style="width:auto;margin:0 0 0 8px"> إلغاء المحاضرة</label><label style="display:block;margin-top:8px">ملاحظة (اختياري)</label><input id="cn"><button class="btn" data-a="chs">حفظ التعديل</button>${S.changes.length?'<h3 style="margin-top:16px">التعديلات الحالية</h3>':""}${S.changes.map(c=>`<div class="row"><div><b>${esc(lname(c))}</b><small>${c.c?"ملغاة":fmtM(mins(c.t))}${c.d?" • بتاريخ "+esc(c.d):" • دائم"}${c.n?" • "+esc(c.n):""}</small></div><button class="btn s ${S.del==c.id?"d":"g"}" data-a="rmc" data-id="${esc(c.id)}">${S.del==c.id?"تأكيد":"إرجاع للثابت"}</button></div>`).join("")}</section>`}
 function loginView(){return `<div class="lg"><img class="logo" src="${LOGO}" alt=""><h1>بوابة الطلبة</h1><p class="mu">كلية التربية البدنية وعلوم الرياضة – جامعة كلكامش</p>${S.err?`<p class="er">${esc(S.err)}</p>`:""}<div class="card"><label>اسم المستخدم</label><input id="u" dir="ltr" autocomplete="username" autocapitalize="none"><label>الرمز</label><input id="p" type="password" dir="ltr" autocomplete="current-password"><div class="er" id="le"></div><button class="btn" data-a="login" style="width:100%">تسجيل الدخول</button></div></div>`}
 function home(){const sh=SH(),st=status(sh);
- return `${S.me.admin?shSw():""}${banners(st)}<section class="card cur"><h3>المحاضرة الحالية</h3>${st.cur?lec(st.cur):'<p class="mu">لا توجد محاضرة الآن</p>'}</section><section class="card"><h3>المحاضرة القادمة</h3>${st.nxt?`<span class="tag">${st.when}</span>`+lec(st.nxt):'<p class="mu">لا توجد محاضرات</p>'}</section><section class="card"><h3>جدول اليوم – ${DAYS[new Date().getDay()]}</h3>${st.today.length?st.today.map(x=>row(x,st.m)).join(""):'<p class="mu">لا توجد محاضرات اليوم</p>'}</section>${postsCard()}`}
-function sched(){const sh=SH(),st=status(sh),td=new Date().getDay();
- return (S.me.admin?shSw():"")+ORDER.map(d=>`<section class="card"><h3>${DAYS[d]}${d==td?" (اليوم)":""}</h3>${dayList(sh,d).map(x=>row(x,d==td?st.m:null)).join("")}</section>`).join("")+`<p class="mu" style="text-align:center;font-size:12px">الجدول يُعمل به من يوم الاثنين 2026/10/12</p>`}
+ return `${S.me.admin?shSw():""}${hi()}${banners(st)}${ntfCard()}<section class="card cur"><h3>المحاضرة الحالية</h3>${st.cur?lec(st.cur):'<p class="mu">لا توجد محاضرة الآن</p>'}</section><section class="card"><h3>المحاضرة القادمة</h3>${st.nxt?`<span class="tag">${st.when}</span>`+lec(st.nxt):'<p class="mu">لا توجد محاضرات</p>'}</section><section class="card"><h3>جدول اليوم – ${DAYS[new Date().getDay()]}</h3>${st.today.length?st.today.map(x=>row(x,st.m)).join(""):'<p class="mu">لا توجد محاضرات اليوم</p>'}</section>${postsCard()}`}
+function sched(){const sh=SH(),st=status(sh),now=new Date(),td=now.getDay();
+ return (S.me.admin?shSw():"")+ORDER.map(d=>{const dt=new Date(now);dt.setDate(dt.getDate()+((d-td+7)%7));return `<section class="card"><h3>${DAYS[d]}${d==td?" (اليوم)":""} <small class="mu" style="font-weight:400">${ymd(dt)}</small></h3>${dayList(sh,d,ymd(dt)).map(x=>row(x,d==td?st.m:null)).join("")||'<p class="mu">لا توجد محاضرات</p>'}</section>`}).join("")+`<p class="mu" style="text-align:center;font-size:12px">الجدول يُعمل به من يوم الاثنين 2026/10/12</p>`}
 function notesList(admin){const l=S.notes.filter(n=>admin||n.sub==S.sub);
  return l.length?l.map(n=>`<div class="row"><div><b>${esc(n.t)}</b><small>${esc(n.sub)} • ${(n.sz/1048576).toFixed(1)} ميغابايت • ${new Date(n.ts).toLocaleDateString("ar-IQ")}</small></div><button class="btn s g" data-a="vw" data-id="${esc(n.id)}">عرض</button><button class="btn s" data-a="dl" data-id="${esc(n.id)}">تنزيل</button>${admin?`<button class="btn s ${S.del==n.id?"d":"g"}" data-a="rmn" data-id="${esc(n.id)}">${S.del==n.id?"تأكيد":"حذف"}</button>`:""}</div>`).join(""):'<p class="mu">لا توجد ملفات بعد</p>'}
 function notes(){return `<div class="chips">${SUBJ.map(s=>`<button class="btn s ${S.sub==s?"":"g"}" data-a="sub" data-v="${s}">${s}</button>`).join("")}</div><section class="card">${notesList(0)}</section>`}
 function admin(){const c=S.cred;
  return (c?`<section class="card cred"><h3 style="color:#003478">بيانات الدخول – تظهر مرة واحدة فقط</h3><p><b>${esc(c.n)}</b></p><p>اسم المستخدم: <code>${esc(c.u)}</code></p><p>الرمز: <code>${esc(c.p)}</code></p><button class="btn s" data-a="cp">نسخ</button></section>`:"")+
- `<section class="card"><h3>إضافة امتحان / كويز / تقرير</h3><label>النوع</label><select id="pk"><option value="exam">امتحان</option><option value="quiz">كويز</option><option value="report">تقرير</option><option value="info">تبليغ</option></select><label>العنوان</label><input id="pt"><label>التفاصيل (اختياري)</label><input id="pb"><label>التاريخ (اختياري، واليوم يُحسب تلقائياً)</label><input id="pd" type="date"><button class="btn" data-a="addp">نشر</button>${S.posts.map(p=>postRow(p,1)).join("")}</section><section class="card"><h3>نقل البيانات القديمة (مرة واحدة)</h3><button class="btn" data-a="mig">نقل الطلاب والملازم والتبليغات</button><p id="mg" class="mu"></p></section>
- <section class="card"><h3>إضافة طالب</h3><label>اسم الطالب</label><input id="sn"><label>نوع الدراسة</label><select id="ss"><option value="m">صباحية</option><option value="e">مسائية</option></select><label>صورة (اختياري)</label><input id="sp" type="file" accept="image/*"><button class="btn" data-a="add">إضافة وتوليد الحساب</button></section>
+ `<section class="card"><h3>إضافة امتحان / كويز / تقرير</h3><label>النوع</label><select id="pk"><option value="exam">امتحان</option><option value="quiz">كويز</option><option value="report">تقرير</option><option value="info">تبليغ</option></select><label>العنوان</label><input id="pt"><label>التفاصيل (اختياري)</label><input id="pb"><label>التاريخ (اختياري، واليوم يُحسب تلقائياً)</label><input id="pd" type="date"><button class="btn" data-a="addp">نشر</button>${S.posts.map(p=>postRow(p,1)).join("")}</section>${chgCard()}<section class="card"><h3>إضافة طالب</h3><label>اسم الطالب</label><input id="sn"><label>نوع الدراسة</label><select id="ss"><option value="m">صباحية</option><option value="e">مسائية</option></select><label>صورة (اختياري)</label><input id="sp" type="file" accept="image/*"><button class="btn" data-a="add">إضافة وتوليد الحساب</button></section>
  <section class="card"><h3>الطلاب (${S.students.filter(s=>!s.adm).length})</h3>${S.students.filter(s=>!s.adm).sort((a,b)=>a.n.localeCompare(b.n,"ar")).map(s=>`<div class="row">${av(s)}<div><b>${esc(s.n)}</b><small>${s.sh=="m"?"صباحية":"مسائية"} • ${esc(s.u)}</small></div><button class="btn s g" data-a="pic" data-id="${esc(s.id)}">صورة</button><button class="btn s g" data-a="rst" data-id="${esc(s.id)}">رمز جديد</button><button class="btn s ${S.del==s.id?"d":"g"}" data-a="rm" data-id="${esc(s.id)}">${S.del==s.id?"تأكيد":"حذف"}</button></div>`).join("")}</section>
  <section class="card"><h3>رفع ملزمة / كتاب (حتى 50 ميغابايت)</h3><label>العنوان</label><input id="nt"><label>المادة</label><select id="nsub">${SUBJ.map(s=>`<option>${s}</option>`).join("")}</select><input id="nf" type="file"><button class="btn" data-a="up" ${S.busy?"disabled":""}>${S.busy?"جارٍ الرفع…":"رفع"}</button></section>
  <section class="card"><h3>الملفات المرفوعة</h3>${notesList(1)}</section>`}
-function render(){const a=$("#app");
+function render(){const a=$("#app");document.body.classList.toggle("login",!S.me);
  if(!S.ready){a.innerHTML='<p class="mu" style="text-align:center;padding-top:80px">جارٍ التحميل…</p>';return}
  if(!S.me){a.innerHTML=loginView();return}
- const tabs=[["home","الرئيسية"],["sch","الجدول"],["act","النشاط"],["notes","الملازم"]];if(S.me.admin)tabs.push(["adm","المشرف"]);
+ const tabs=[["home","<span class=ic>🏠</span>الرئيسية"],["sch","<span class=ic>📅</span>الجدول"],["act","<span class=ic>📢</span>النشاط"],["notes","<span class=ic>📚</span>الملازم"]];if(S.me.admin)tabs.push(["adm","<span class=ic>⚙️</span>المشرف"]);
  const v=S.tab=="act"?actView():S.tab=="sch"?sched():S.tab=="notes"?notes():S.tab=="adm"&&S.me.admin?admin():home();
- a.innerHTML=`<header><img class="l" src="${LOGO}" alt="">${S.me.admin?"":av(S.me)}<div><b>جامعة كلكامش</b><small>${esc(S.me.n)}</small></div><button class="btn s" data-a="out">خروج</button></header>${v}<nav>${tabs.map(t=>`<button class="${S.tab==t[0]?"on":""}" data-a="tab" data-v="${t[0]}">${t[1]}</button>`).join("")}</nav>`}
+ a.innerHTML=`<header><img class="l" src="${LOGO}" alt="">${S.me.admin?"":av(S.me)}<div><b>جامعة كلكامش</b><small>${esc(S.me.n)}</small></div><button class="btn s" data-a="out">خروج</button></header>${S.tab=="adm"?`<div class="adm">${v}</div>`:v}<nav>${tabs.map(t=>`<button class="${S.tab==t[0]?"on":""}" data-a="tab" data-v="${t[0]}">${t[1]}</button>`).join("")}</nav>`}
 function img2url(f){return new Promise(r=>{const fr=new FileReader();fr.onload=()=>{const i=new Image();i.onload=()=>{const c=document.createElement("canvas");c.width=c.height=200;const s=Math.min(i.width,i.height);c.getContext("2d").drawImage(i,(i.width-s)/2,(i.height-s)/2,s,s,0,0,200,200);r(c.toDataURL("image/jpeg",.8))};i.src=fr.result};fr.readAsDataURL(f)})}
 const newP=()=>{const A="abcdefghjkmnpqrstuvwxyz23456789";return Array.from({length:6},()=>A[Math.floor(Math.random()*A.length)]).join("")};
 function newU(){let u;do{u="g"+(1000+Math.floor(Math.random()*9000))}while(S.students.some(s=>s.id==u));return u}
@@ -143,31 +213,35 @@ function intro(){
   raf=requestAnimationFrame(loop)};
  raf=requestAnimationFrame(loop)}
 const act={
- async login(){const u0=$("#u").value.trim();if(u0.includes("@")){if(!(await adminLogin(u0,$("#p").value))){$("#le").textContent="بيانات المشرف غير صحيحة";return}S.me={admin:true,n:"المشرف"};S.tab="adm";render();return}const u=$("#u").value.trim().toLowerCase(),p=$("#p").value,h=await sha(u+":"+p.trim().toLowerCase()),s=S.students.find(x=>x.u==u&&x.h==h);
+ async login(){const u0=$("#u").value.trim();if(u0.includes("@")){if(!(await adminLogin(u0,$("#p").value))){$("#le").textContent="تعذّر دخول المشرف: "+window.LASTERR;return}S.me={admin:true,n:"المشرف"};S.tab="adm";render();return}const u=$("#u").value.trim().toLowerCase(),p=$("#p").value,h=await sha(u+":"+p.trim().toLowerCase()),s=S.students.find(x=>x.u==u&&x.h==h);
   if(!s){$("#le").textContent="اسم المستخدم أو الرمز غير صحيح";return}
   S.me=s.adm?{admin:true,n:s.n,u:s.u,id:s.id}:s;S.tab=s.adm?"adm":"home";try{localStorage.setItem("sess",JSON.stringify({u,h}))}catch(e){}render()},
  admin(){S.me={admin:true,n:"المشرف"};S.tab="adm";render()},
  out(){TOK=null;try{localStorage.removeItem("adm")}catch(e){}S.me=null;try{localStorage.removeItem("sess")}catch(e){}render()},
  tab(d){S.tab=d.v;render()},sh(d){S.sh=d.v;render()},sub(d){S.sub=d.v;render()},
- async cp(){try{await navigator.clipboard.writeText("اسم المستخدم: "+S.cred.u+"\nالرمز: "+S.cred.p);toast("تم النسخ")}catch(e){toast("انسخها يدوياً")}},
+ async cp(){try{await navigator.clipboard.writeText("اسم المستخدم: "+S.cred.u+"\nالرمز: "+S.cred.p);toast("تم النسخ")}catch(e){toast("انسخها يدوياً: "+String(e&&e.message||e).slice(0,170))}},
  async add(){const n=$("#sn").value.trim();if(!n)return toast("اكتب اسم الطالب");const u=newU(),p=newP();
-  try{await db.collection("students").doc(u).set({n,u,h:await sha(u+":"+p),sh:$("#ss").value,ph:PH.add||""});S.cred={n,u,p};PH.add=null;render()}catch(e){toast("تعذّرت الإضافة")}},
- async rst(d){const s=S.students.find(x=>x.id==d.id),p=newP();try{await db.collection("students").doc(s.id).update({h:await sha(s.u+":"+p)});S.cred={n:s.n,u:s.u,p};render()}catch(e){toast("تعذّر التغيير")}},
+  try{await db.collection("students").doc(u).set({n,u,h:await sha(u+":"+p),sh:$("#ss").value,ph:PH.add||""});S.cred={n,u,p};PH.add=null;render()}catch(e){toast("تعذّرت الإضافة: "+String(e&&e.message||e).slice(0,170))}},
+ async rst(d){const s=S.students.find(x=>x.id==d.id),p=newP();try{await db.collection("students").doc(s.id).update({h:await sha(s.u+":"+p)});S.cred={n:s.n,u:s.u,p};render()}catch(e){toast("تعذّر التغيير: "+String(e&&e.message||e).slice(0,170))}},
  pic(d){PH.t=d.id;$("#pf").click()},
- async rm(d){if(S.del!=d.id){S.del=d.id;return render()}S.del=null;try{await db.collection("students").doc(d.id).delete()}catch(e){toast("تعذّر الحذف")}},
+ async rm(d){if(S.del!=d.id){S.del=d.id;return render()}S.del=null;try{await db.collection("students").doc(d.id).delete()}catch(e){toast("تعذّر الحذف: "+String(e&&e.message||e).slice(0,170))}},
  async up(){const f=$("#nf").files[0],t=$("#nt").value.trim()||(f&&f.name),sub=$("#nsub").value;
   if(!f)return toast("اختر ملفاً");if(f.size>50*1048576)return toast("الحد الأقصى 50 ميغابايت");if(!assets)return toast("الرفع غير متاح");
-  S.busy=1;render();try{const r=await assets.upload(f);await db.collection("notes").doc("n"+Date.now()).set({t,sub,a:r.id,f:f.name,sz:f.size,ts:Date.now()});toast("تم الرفع")}catch(e){toast("فشل الرفع")}S.busy=0;render()},
- async rmn(d){if(S.del!=d.id){S.del=d.id;return render()}S.del=null;const n=S.notes.find(x=>x.id==d.id);try{await db.collection("notes").doc(d.id).delete();if(assets&&n)await assets.delete(n.a)}catch(e){toast("تعذّر الحذف")}},
- async addp(){const t=$("#pt").value.trim();if(!t)return toast("اكتب العنوان");try{await db.collection("posts").doc("p"+Date.now()).set({k:$("#pk").value,t,b:$("#pb").value.trim(),d:$("#pd").value||"",ts:Date.now()});toast("تم النشر")}catch(e){toast("تعذّر النشر")}},
- async rmp(d){if(S.del!=d.id){S.del=d.id;return render()}S.del=null;try{await db.collection("posts").doc(d.id).delete()}catch(e){toast("تعذّر الحذف")}},
+  S.busy=1;render();try{const r=await assets.upload(f);await db.collection("notes").doc("n"+Date.now()).set({t,sub,a:r.id,f:f.name,sz:f.size,ts:Date.now()});toast("تم الرفع")}catch(e){toast("فشل الرفع: "+String(e.message).slice(0,160))}S.busy=0;render()},
+ async rmn(d){if(S.del!=d.id){S.del=d.id;return render()}S.del=null;const n=S.notes.find(x=>x.id==d.id);try{await db.collection("notes").doc(d.id).delete();if(assets&&n)await assets.delete(n.a)}catch(e){toast("تعذّر الحذف: "+String(e&&e.message||e).slice(0,170))}},
+ async addp(){const t=$("#pt").value.trim();if(!t)return toast("اكتب العنوان");try{await db.collection("posts").doc("p"+Date.now()).set({k:$("#pk").value,t,b:$("#pb").value.trim(),d:$("#pd").value||"",ts:Date.now()});toast("تم النشر")}catch(e){toast("تعذّر النشر: "+String(e&&e.message||e).slice(0,170))}},
+ async rmp(d){if(S.del!=d.id){S.del=d.id;return render()}S.del=null;try{await db.collection("posts").doc(d.id).delete()}catch(e){toast("تعذّر الحذف: "+String(e&&e.message||e).slice(0,170))}},
  async mig(){const o=$("#mg"),say=s=>{o.textContent=s};try{const L=await (await fetch("legacy.json")).json();
   say("نقل الطلاب…");for(const s of L.students)await db.collection("students").doc(s.id).set({n:s.n,u:s.u,h:s.h,sh:s.sh,ph:s.ph||""});
   for(const p of L.posts){if(S.posts.some(x=>x.t==p.t&&x.ts==p.ts))continue;await db.collection("posts").doc("new").set({k:p.k,t:p.t,b:p.b||"",d:p.d||"",ts:p.ts})}
   let i=0;for(const n of L.notes){i++;if(S.notes.some(x=>x.t==n.t&&x.sub==n.sub))continue;say("نقل الملازم "+i+" من "+L.notes.length+"…");const b=await (await fetch(n.url)).blob();const r=await assets.upload(new File([b],n.t+".pdf",{type:"application/pdf"}));await db.collection("notes").doc("new").set({t:n.t,sub:n.sub,a:r.id,f:n.t+".pdf",sz:n.sz,ts:n.ts})}
   say("تم النقل ✔")}catch(e){say("تعذّر النقل: "+e.message)}},
+ ntf(){askNtf()},
+ async chs(){const v=$("#cl").value.split("|");if(v.length<4)return;const sh=v[0],k=v[1]+"|"+v[2]+"|"+v[3],c=$("#cc").checked,t=$("#ct").value,d=$("#cd").value;if(!c&&!t)return toast("اختر وقتاً جديداً أو فعّل الإلغاء");
+  try{for(const o of S.changes.filter(o=>o.sh==sh&&o.l==k&&(o.d||"")==d))await db.collection("changes").doc(o.id).delete();await db.collection("changes").doc("new").set({l:k,sh,t:c?"":t,c,d,n:$("#cn").value.trim(),ts:Date.now()});toast("تم حفظ التعديل")}catch(e){toast("تعذّر الحفظ: "+String(e&&e.message||e).slice(0,170))}},
+ async rmc(d){if(S.del!=d.id){S.del=d.id;return render()}S.del=null;try{await db.collection("changes").doc(d.id).delete()}catch(e){toast("تعذّر الحذف: "+String(e&&e.message||e).slice(0,170))}},
  vw(d){const n=S.notes.find(x=>x.id==d.id);if(!n)return;const w=window.open(furl(n.a),"_blank");if(!w)toast("تعذّر فتح العرض، جرّب التنزيل")},
- async dl(d){const n=S.notes.find(x=>x.id==d.id);if(!n)return;try{const b=await (await fetch(furl(n.a))).blob();if(dls)await dls.save({filename:n.f,data:b});else window.open(furl(n.a),"_blank")}catch(e){toast("تعذّر التحميل")}}
+ async dl(d){const n=S.notes.find(x=>x.id==d.id);if(!n)return;try{const b=await (await fetch(furl(n.a))).blob();if(dls)await dls.save({filename:n.f,data:b});else window.open(furl(n.a),"_blank")}catch(e){toast("تعذّر التحميل: "+String(e&&e.message||e).slice(0,170))}}
 };
 document.addEventListener("click",e=>{const b=e.target.closest("[data-a]");if(b&&act[b.dataset.a])act[b.dataset.a](b.dataset)});
 document.addEventListener("keydown",e=>{if(e.key=="Enter"&&(e.target.id=="u"||e.target.id=="p"))act.login()});
@@ -180,18 +254,18 @@ intro();
 const SB="https://ukjrktjobxywlskizgqa.supabase.co",KEY="sb_publishable_McqEBzpnhnwSuB8acuKn0g_Rpa7FG6C";
 let TOK=null,REF=null,EXP=0;
 const hdr=x=>({apikey:KEY,...(TOK?{Authorization:"Bearer "+TOK}:{}),...x});
-const MAP={students:{n:"name",u:"username",h:"pass_hash",sh:"shift",ph:"photo"},notes:{t:"title",sub:"subject",a:"path",f:"filename",sz:"size",ts:"created_at"},posts:{k:"kind",t:"title",b:"body",d:"date",ts:"created_at"}};
-const toRow=(c,o)=>{const r={};for(const k in o){const m=MAP[c][k];if(!m)continue;let v=o[k];if(m=="created_at")v=new Date(v).toISOString();if(m=="date"&&!v)v=null;r[m]=v}return r};
-const fromRow=(c,r)=>{const o={};for(const k in MAP[c]){const m=MAP[c][k];let v=r[m];if(m=="created_at")v=Date.parse(v);if(m=="date"&&!v)v="";o[k]=v}return o};
+const MAP={students:{n:"name",u:"username",h:"pass_hash",sh:"shift",ph:"photo"},notes:{t:"title",sub:"subject",a:"path",f:"filename",sz:"size",ts:"created_at"},posts:{k:"kind",t:"title",b:"body",d:"date",ts:"created_at"},changes:{l:"lec",sh:"shift",t:"new_time",c:"cancel",d:"on_date",n:"note",ts:"created_at"}};
+const toRow=(c,o)=>{const r={};for(const k in o){const m=MAP[c][k];if(!m)continue;let v=o[k];if(m=="created_at")v=new Date(v).toISOString();if((m=="date"||m=="on_date")&&!v)v=null;r[m]=v}return r};
+const fromRow=(c,r)=>{const o={};for(const k in MAP[c]){const m=MAP[c][k];let v=r[m];if(m=="created_at")v=Date.parse(v);if((m=="date"||m=="on_date")&&!v)v="";o[k]=v}return o};
 const uuid=s=>/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(s);
 const furl=p=>SB+"/storage/v1/object/public/files/"+p;
 function setTok(j){TOK=j.access_token;REF=j.refresh_token;EXP=Date.now()+(j.expires_in-60)*1000;try{localStorage.setItem("adm",JSON.stringify({a:TOK,r:REF,e:EXP}))}catch(e){}}
 async function refreshTok(){const r=await fetch(SB+"/auth/v1/token?grant_type=refresh_token",{method:"POST",headers:{apikey:KEY,"Content-Type":"application/json"},body:JSON.stringify({refresh_token:REF})});const j=await r.json();if(r.ok&&j.access_token){setTok(j);return true}TOK=null;try{localStorage.removeItem("adm")}catch(e){}return false}
-async function adminLogin(email,password){try{const r=await fetch(SB+"/auth/v1/token?grant_type=password",{method:"POST",headers:{apikey:KEY,"Content-Type":"application/json"},body:JSON.stringify({email,password})});const j=await r.json();if(!r.ok||!j.access_token)return false;setTok(j);return true}catch(e){return false}}
+async function adminLogin(email,password){try{const r=await fetch(SB+"/auth/v1/token?grant_type=password",{method:"POST",headers:{apikey:KEY,"Content-Type":"application/json"},body:JSON.stringify({email,password})});const j=await r.json();if(!r.ok||!j.access_token){window.LASTERR=j.msg||j.error_description||j.message||j.error||("HTTP "+r.status);return false}setTok(j);return true}catch(e){window.LASTERR=e.message;return false}}
 async function admRestore(){try{const k=JSON.parse(localStorage.getItem("adm")||"null");if(!k)return false;TOK=k.a;REF=k.r;EXP=k.e;if(Date.now()<EXP)return true;return await refreshTok()}catch(e){return false}}
 async function rq(path,opt){opt=opt||{};if(TOK&&Date.now()>EXP)await refreshTok();const r=await fetch(SB+path,{...opt,headers:hdr(opt.headers||{})});if(!r.ok)throw new Error(await r.text());if(r.status==204)return null;return r.json().catch(()=>null)}
 const JH={"Content-Type":"application/json"};
-const LS={students:[],notes:[],posts:[]};
+const LS={students:[],notes:[],posts:[],changes:[]};
 async function pull(c){const rows=await rq("/rest/v1/"+c+"?select=*&order=created_at.asc");LS[c].forEach(cb=>cb({docs:rows.map(r=>({id:r.id,data:()=>fromRow(c,r)}))}))}
 const SBdb={collection:c=>({
  onSnapshot(cb,er){LS[c].push(cb);pull(c).catch(e=>er&&er(e))},
@@ -211,7 +285,8 @@ const SBdl={async save({filename,data}){const a=document.createElement("a");a.hr
  db.collection("students").onSnapshot(s=>{S.students=s.docs.map(d=>({id:d.id,...d.data()}));restore();S.ready=true;clearTimeout(t);render()},()=>{S.ready=true;render()});
  db.collection("notes").onSnapshot(s=>{S.notes=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>b.ts-a.ts);if(S.me)render()},()=>{});
  db.collection("posts").onSnapshot(s=>{S.posts=s.docs.map(d=>({id:d.id,...d.data()}));if(S.me)render()},()=>{});
- setInterval(()=>{["notes","posts"].forEach(c=>pull(c).catch(()=>{}))},60000);
+ db.collection("changes").onSnapshot(s=>{S.changes=s.docs.map(d=>({id:d.id,...d.data()}));if(S.me)render()},()=>{});
+ setInterval(()=>{["notes","posts","changes"].forEach(c=>pull(c).catch(()=>{}))},60000);setInterval(checkNtf,20000);
  setInterval(()=>{if(S.me&&(S.tab=="home"||S.tab=="sch"))render()},30000);
 })();
 render();
