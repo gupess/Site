@@ -121,6 +121,7 @@ nav button .ic{font-size:19px;line-height:1}
 #app.an .hero{animation:gl 10s linear infinite,up .5s both}header b{font-size:14px;line-height:1.35}header small{font-size:11px}
 .wl{display:flex;align-items:center;gap:10px;margin-bottom:8px}.wl h2{margin:0}.hero .av{width:58px;height:58px;font-size:24px;box-shadow:0 0 0 3px var(--gold),0 4px 12px rgba(0,0,0,.3);flex:none}
 .hero .dl.ph{padding:0;object-fit:cover}.hero .dl.ini{display:flex;align-items:center;justify-content:center;background:var(--gold);color:#003478;font-size:38px;font-weight:700}
+header img.l{height:54px!important}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -232,7 +233,7 @@ function render(){const a=$("#app");document.body.classList.toggle("login",!S.me
  if(!S.me){a.innerHTML=loginView();return}
  const tabs=[["home","<span class=ic>🏠</span>الرئيسية"],["sch","<span class=ic>📅</span>الجدول"],["act","<span class=ic>📢</span>النشاط"],["notes","<span class=ic>📚</span>الملازم"]];if(S.me.admin)tabs.push(["att","<span class=ic>📝</span>الحضور"],["adm","<span class=ic>⚙️</span>المشرف"]);
  const v=S.tab=="act"?actView():S.tab=="sch"?sched():S.tab=="notes"?notes():S.tab=="att"&&S.me.admin?'<section class="card"><div id="att">'+attHtml()+'</div></section>':S.tab=="adm"&&S.me.admin?admin():home();
- a.innerHTML=`<header><img class="l" src="${DLOGO}" alt=""><div><b>كلية التربية البدنية وعلوم الرياضة</b><small>جامعة كلكامش</small></div>${S.me.admin?"":`<button class="btn s ic2" data-a="bell">${ntfOn()?"🔔":"🔕"}</button>`}<button class="btn s ic2" data-a="thm">🌓</button><button class="btn s" data-a="out">خروج</button></header>${S.tab=="adm"?`<div class="adm">${v}</div>`:v}<nav>${tabs.map(t=>`<button class="${S.tab==t[0]?"on":""}" data-a="tab" data-v="${t[0]}">${t[1]}</button>`).join("")}</nav>`}
+ a.innerHTML=`<header><img class="l" src="${DLOGO}" alt=""><div style="flex:1"></div>${S.me.admin?"":`<button class="btn s ic2" data-a="bell">${ntfOn()?"🔔":"🔕"}</button>`}<button class="btn s ic2" data-a="thm">🌓</button><button class="btn s" data-a="out">خروج</button></header>${S.tab=="adm"?`<div class="adm">${v}</div>`:v}<nav>${tabs.map(t=>`<button class="${S.tab==t[0]?"on":""}" data-a="tab" data-v="${t[0]}">${t[1]}</button>`).join("")}</nav>`}
 function img2url(f){return new Promise(r=>{const fr=new FileReader();fr.onload=()=>{const i=new Image();i.onload=()=>{const c=document.createElement("canvas");c.width=c.height=200;const s=Math.min(i.width,i.height);c.getContext("2d").drawImage(i,(i.width-s)/2,(i.height-s)/2,s,s,0,0,200,200);r(c.toDataURL("image/jpeg",.8))};i.src=fr.result};fr.readAsDataURL(f)})}
 const newP=()=>{const A="abcdefghjkmnpqrstuvwxyz23456789";return Array.from({length:6},()=>A[Math.floor(Math.random()*A.length)]).join("")};
 function newU(){let u;do{u="g"+(1000+Math.floor(Math.random()*9000))}while(S.students.some(s=>s.id==u));return u}
