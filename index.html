@@ -119,6 +119,7 @@ nav button .ic{font-size:19px;line-height:1}
 .vb{font-size:11px;background:var(--gold);color:#003478;border-radius:10px;padding:1px 8px;vertical-align:middle}.wn{background:linear-gradient(135deg,#fff4d6,#ffe9a8)!important;color:#3b2d00;border:2px solid var(--gold)!important}.wn h3{color:#7a5300}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 #app.an .hero{animation:gl 10s linear infinite,up .5s both}header b{font-size:14px;line-height:1.35}header small{font-size:11px}
+.wl{display:flex;align-items:center;gap:10px;margin-bottom:8px}.wl h2{margin:0}.hero .av{width:58px;height:58px;font-size:24px;box-shadow:0 0 0 3px var(--gold),0 4px 12px rgba(0,0,0,.3);flex:none}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -215,7 +216,7 @@ try{const th=localStorage.getItem("th");if(th)document.documentElement.dataset.t
 const dur=m=>m>=60?Math.floor(m/60)+" ساعة"+(m%60?" و"+m%60+" دقيقة":""):m+" دقيقة";
 function heroLine(st){const c=st.cur,nx=st.nxt;return c?`<div class="pg"><i style="width:${Math.max(4,Math.min(100,Math.round((st.m-mins(c.s))/Math.max(1,c.e-mins(c.s))*100)))}%"></i></div>🔴 الآن: <b>${esc(c.n)}</b> — تنتهي ${fmtM(c.e)}`:nx?`⏭ القادمة (${st.when}): <b>${esc(nx.n)}</b> الساعة ${fmtM(mins(nx.s))}${st.when=="اليوم"?" — بعد "+dur(mins(nx.s)-st.m):""}`:"لا توجد محاضرات قريبة"}
 function hero(st){const h=new Date().getHours(),g=h<12?"صباح الخير":h<17?"طاب يومك":"مساء الخير";
- return `<section class="hero"><img class="dl" src="${DLOGO}" alt=""><div><small>${g} 👋</small><h2>${esc(S.me.admin?"المشرف":S.me.n)}</h2><p>كلية التربية البدنية وعلوم الرياضة<br>جامعة كلكامش</p></div><div class="hl">${heroLine(st)}</div><span class="fb b1">⚽</span><span class="fb b2">🏀</span><span class="fb b3">🏐</span></section>`}
+ return `<section class="hero"><img class="dl" src="${DLOGO}" alt=""><div><div class="wl">${S.me.admin?"":av(S.me)}<div><small>${g} 👋</small><h2>${esc(S.me.admin?"المشرف":S.me.n)}</h2></div></div><p>كلية التربية البدنية وعلوم الرياضة<br>جامعة كلكامش</p></div><div class="hl">${heroLine(st)}</div><span class="fb b1">⚽</span><span class="fb b2">🏀</span><span class="fb b3">🏐</span></section>`}
 let SG="";function sig(){try{const st=status(SH());return[st.cur?st.cur.n+st.cur.s:"",st.nxt?st.nxt.n+st.nxt.s:"",st.when].join("|")}catch(e){return""}}
 const upHl=()=>{const hl=$(".hl");if(hl&&S.me&&S.tab=="home")hl.innerHTML=heroLine(status(SH()))};
 function tiles(){const nn=(S.notes||[]).filter(isNew).length,up=(S.posts||[]).length,t=[["sch","📅","الجدول",""],["notes","📚","الملازم",nn?nn+" جديد":""],["act","📢","النشاط",up?String(up):""]];if(S.me.admin)t.push(["att","📝","الحضور",""],["adm","⚙️","الإدارة",""]);
